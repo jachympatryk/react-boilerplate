@@ -44,6 +44,7 @@
     "import/no-extraneous-dependencies": 0,
     "import/prefer-default-export": 0,
     "import/no-cycle": 0,
+    "import/named": 0,
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/lines-between-class-members": "off",
     "prettier/prettier": ["error"],

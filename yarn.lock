@@ -1069,6 +1069,23 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@better-typed/hyper-fetch@^0.0.33":
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/@better-typed/hyper-fetch/-/hyper-fetch-0.0.33.tgz#8bc1d02c36ab1bb130bd5a96b200c647462ceb48"
+  integrity sha512-Gs8N1CjsseVmTzYQrGvNd2Fpzp98hLyEo8uRY5xZpTBVOXibQQD76lFBP5TOjjC4g3I4kHUWgUHX4g/Ba/Zyqw==
+
+"@better-typed/react-hyper-fetch@^0.0.33":
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/@better-typed/react-hyper-fetch/-/react-hyper-fetch-0.0.33.tgz#0fcda5a6b55b049405b7b40c3d06e6e914172aef"
+  integrity sha512-+NpduqnQFF3UqsPooEg5v5a7QpN0Zk0uvf6gyZlA7XYBxJOw2zxr7cF1uDpphqXJW3zZ/K4qeNpozYGMF4Ul1w==
+  dependencies:
+    "@better-typed/react-lifecycle-hooks" "^1.0.2"
+
+"@better-typed/react-lifecycle-hooks@^1.0.2", "@better-typed/react-lifecycle-hooks@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@better-typed/react-lifecycle-hooks/-/react-lifecycle-hooks-1.0.3.tgz#edae3d48687691d3efad1c471922e06c4e9fbdcb"
+  integrity sha512-HicCbPvD55QSzqrpqAMM8A1MjnnCOj+qf5v2QygGfLc0DN+rTK+CP5hdwbbZ6guwoKRxshsG3CfoRuYNgbNSEA==
+
 "@csstools/normalize.css@*":
   version "12.0.0"
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-12.0.0.tgz#a9583a75c3f150667771f30b60d9f059473e62c4"
