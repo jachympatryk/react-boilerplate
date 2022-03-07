@@ -3,12 +3,12 @@ import { Navigate } from 'react-router-dom';
 
 import { Page } from 'components';
 import { RouteConfig } from 'types';
+import { LOGIN_PAGE } from 'config/routes.config';
 
 export const PageRoute: React.FC<RouteConfig> = ({ component: Component, showNavigation, auth }) => {
   const isAuthenticated = true;
 
-  // todo: replace with constants
-  if (auth && !isAuthenticated) return <Navigate to="/login" />;
+  if (auth && !isAuthenticated) return <Navigate to={LOGIN_PAGE.path} />;
 
   return (
     <Page showNavigation={showNavigation}>

@@ -7,3 +7,5 @@ export interface RouteConfig {
   auth: boolean;
   showNavigation: boolean;
 }
+
+export type RouteConstant = Omit<RouteConfig, 'component'>;
