@@ -3,27 +3,29 @@ import React from 'react';
 import { useQueryParams } from 'hooks';
 
 type QueryParams = {
-  page: number;
-  perPage: number;
+  page?: number;
+  perPage?: number;
 };
 
 export const LandingPage: React.FC = () => {
-  const query = useQueryParams<QueryParams>();
+  const { setQueryParam, setQueryParams, deleteQueryParam } = useQueryParams<QueryParams>({
+    page: 1,
+  });
 
   const setParam = () => {
-    query.setParam('page', 12);
+    setQueryParam('page', 12);
   };
 
   const setParams = () => {
-    query.setParams({ page: 1, perPage: 10 });
+    setQueryParams({ page: 1, perPage: 10 });
   };
 
   const deletePageParam = () => {
-    query.deleteQuery('page');
+    deleteQueryParam('page');
   };
 
   const deletePerPageParam = () => {
-    query.deleteQuery('perPage');
+    deleteQueryParam('perPage');
   };
 
   return (
