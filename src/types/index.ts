@@ -1,2 +1,2 @@
 export * from './route.types';
-export * from './helpers.utils';
+export * from 'types/helpers.types';
