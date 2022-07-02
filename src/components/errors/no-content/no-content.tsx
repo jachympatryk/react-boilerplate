@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 import { NoContentProps } from './no-content.types';
-import { LANDING_PAGE } from 'config/routes.config';
+import { LANDING_PAGE } from 'constants/routes.constants';
 
 import styles from './no-content.module.scss';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import { PageRoute } from 'components';
-import { routes } from 'constants/routes.constants';
+import { routes } from 'config';
 
 import './assets/styles/app.scss';
 

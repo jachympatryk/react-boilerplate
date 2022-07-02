@@ -3,7 +3,7 @@ import { Navigate } from 'react-router-dom';
 
 import { Page } from 'components';
 import { RouteConfig } from 'types';
-import { LOGIN_PAGE } from 'config/routes.config';
+import { LOGIN_PAGE } from 'constants/routes.constants';
 
 export const PageRoute: React.FC<RouteConfig> = ({ component: Component, showNavigation, auth }) => {
   const isAuthenticated = true;

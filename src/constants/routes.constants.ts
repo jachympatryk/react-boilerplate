@@ -1,8 +1,15 @@
-import { LoginPage, LandingPage } from 'pages';
-import { RouteConfig } from 'types';
-import { LANDING_PAGE, LOGIN_PAGE } from 'config/routes.config';
+import { RouteConstant } from 'types';
 
-export const routes: RouteConfig[] = [
-  { ...LANDING_PAGE, component: LandingPage },
-  { ...LOGIN_PAGE, component: LoginPage },
-];
+export const LANDING_PAGE: RouteConstant = {
+  path: '/',
+  name: 'Main page',
+  auth: false,
+  showNavigation: true,
+};
+
+export const LOGIN_PAGE: RouteConstant = {
+  path: '/login',
+  name: 'Login',
+  auth: false,
+  showNavigation: false,
+};
