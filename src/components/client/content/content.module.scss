@@ -1,4 +1,5 @@
-@use 'src/assets/styles/variables';
+@use "src/assets/styles/breakpoints";
+@use "src/assets/styles/variables";
 
 .wrapper {
   width: 100%;
@@ -17,7 +18,7 @@
     height: 4px;
   }
 
-  @media screen and (min-width: variables.$media_l) {
+  @media screen and (min-width: breakpoints.$media_l) {
     padding: variables.$content_padding_desktop;
   }
 }
@@ -30,7 +31,7 @@
   gap: variables.$grid_gap;
   padding-top: 24px;
 
-  @media screen and (min-width: variables.$media_l) {
+  @media screen and (min-width: breakpoints.$media_l) {
     padding-top: 0;
   }
 }

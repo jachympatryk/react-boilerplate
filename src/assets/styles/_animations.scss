@@ -1,0 +1,57 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@mixin fade-in($duration: 0.3s, $delay: 0s) {
+  animation-name: fadeIn;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@mixin fade-out($duration: 0.3s, $delay: 0s) {
+  animation-name: fadeOut;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@mixin fade-in-down($duration: 0.3s, $delay: 0s) {
+  animation-name: fadeInDown;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}

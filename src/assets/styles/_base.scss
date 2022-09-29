@@ -1,0 +1,22 @@
+@mixin max-length($length: 200px) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: $length;
+}
+
+@mixin row($justify-content: flex-start, $gap: 12px) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify-content;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin column($justify-content: flex-start, $align-items: center, $gap: 12px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
