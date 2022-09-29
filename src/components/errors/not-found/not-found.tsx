@@ -1,16 +1,16 @@
-import { memo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { memo } from "react";
+import { useNavigate } from "react-router-dom";
 
-import { NotFoundProps } from './not-found.types';
-import { LANDING_PAGE } from 'constants/routes.constants';
+import { NotFoundProps } from "./not-found.types";
+import { LANDING_PAGE } from "constants/routes.constants";
 
-import styles from './not-found.module.scss';
+import styles from "./not-found.module.scss";
 
 export const NotFound = memo(
-  ({ title, subtitle, size = 'big', className = '', noButton = false, btnText, btnClick }: NotFoundProps) => {
+  ({ title, subtitle, size = "big", className = "", noButton = false, btnText, btnClick }: NotFoundProps) => {
     const navigate = useNavigate();
 
-    const buttonText = btnText || 'Go to Dashboard';
+    const buttonText = btnText || "Go to Dashboard";
 
     const handleClick = () => {
       if (btnClick) {

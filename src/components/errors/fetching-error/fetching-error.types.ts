@@ -3,6 +3,6 @@ export type FetchingErrorProps = {
   subtitle?: string;
   refreshText?: string;
   refreshClick?: () => void;
-  size?: 'big' | 'medium' | 'small';
+  size?: "big" | "medium" | "small";
   className?: string;
 };

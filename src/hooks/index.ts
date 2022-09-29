@@ -1,1 +1,1 @@
-export * from './use-query-params/use-query-params.hook';
+export * from "./use-query-params/use-query-params.hook";

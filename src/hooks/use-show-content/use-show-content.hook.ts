@@ -1,5 +1,5 @@
-import { ServerErrorType } from 'server/server.types';
-import { UseShowContentReturnType } from './use-show-content.types';
+import { ServerErrorType } from "server/server.types";
+import { UseShowContentReturnType } from "./use-show-content.types";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function useShowContent<T extends { data: any; loading: boolean; error: ServerErrorType | null }>(

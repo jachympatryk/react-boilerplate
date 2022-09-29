@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export interface RouteConfig {
   path: string;
@@ -8,4 +8,4 @@ export interface RouteConfig {
   showNavigation: boolean;
 }
 
-export type RouteConstant = Omit<RouteConfig, 'component'>;
+export type RouteConstant = Omit<RouteConfig, "component">;

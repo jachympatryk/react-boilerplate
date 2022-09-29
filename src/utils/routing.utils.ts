@@ -1,4 +1,4 @@
-import { ExtractRouteParams, Negatives } from 'types';
+import { ExtractRouteParams, Negatives } from "types";
 
 export const getLinkPath = <T extends string>(
   path: T,
@@ -8,7 +8,7 @@ export const getLinkPath = <T extends string>(
   const params = paramsArray[0];
   if (params) {
     Object.entries(params).forEach(([key, value]) => {
-      routePath = routePath.replaceAll(new RegExp(`:${key}`, 'g'), String(value));
+      routePath = routePath.replaceAll(new RegExp(`:${key}`, "g"), String(value));
     });
   }
 

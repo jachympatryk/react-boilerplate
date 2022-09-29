@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import queryString from 'query-string';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { useDidMount, useDidUpdate } from '@better-typed/react-lifecycle-hooks';
+import { useState } from "react";
+import queryString from "query-string";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useDidMount, useDidUpdate } from "@better-typed/react-lifecycle-hooks";
 
-import { options } from './use-query-params.utils';
-import { isEmptyObject } from 'utils';
-import { Nullable } from 'types';
-import { QueryParamsReturn, QueryParams } from './use-query-params.types';
+import { options } from "./use-query-params.utils";
+import { isEmptyObject } from "utils";
+import { Nullable } from "types";
+import { QueryParamsReturn, QueryParams } from "./use-query-params.types";
 
 export const useQueryParams = <Query extends QueryParams>(possibleQueries?: Query): QueryParamsReturn<Query> => {
   const location = useLocation();

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React from 'react';
+import React from "react";
 
 export type Negatives = null | undefined;
 

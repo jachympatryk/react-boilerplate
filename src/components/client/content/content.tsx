@@ -1,9 +1,9 @@
-import React from 'react';
-import classNames from 'classnames';
+import React from "react";
+import classNames from "classnames";
 
-import { ContentProps } from './content.types';
+import { ContentProps } from "./content.types";
 
-import styles from './content.module.scss';
+import styles from "./content.module.scss";
 
 export const Content: React.FC<ContentProps> = ({ children, className }) => {
   return (

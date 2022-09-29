@@ -1,7 +1,7 @@
 type ObjectValue = Record<string, unknown>;
 
 const convertFormDataValue = (value: unknown): File | string => {
-  if (value instanceof File || typeof value === 'string') return value;
+  if (value instanceof File || typeof value === "string") return value;
   return JSON.stringify(value);
 };
 

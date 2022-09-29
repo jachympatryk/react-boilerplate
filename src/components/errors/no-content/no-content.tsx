@@ -1,25 +1,25 @@
-import { memo } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { memo } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
-import { NoContentProps } from './no-content.types';
-import { LANDING_PAGE } from 'constants/routes.constants';
+import { NoContentProps } from "./no-content.types";
+import { LANDING_PAGE } from "constants/routes.constants";
 
-import styles from './no-content.module.scss';
+import styles from "./no-content.module.scss";
 
 export const NoContent = memo(
   ({
-    title = '',
-    subtitle = '',
-    btnText = '',
-    size = 'big',
+    title = "",
+    subtitle = "",
+    btnText = "",
+    size = "big",
     onClick,
-    className = '',
+    className = "",
     showButton = false,
   }: NoContentProps) => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    const isDashboard = location.pathname === '/';
+    const isDashboard = location.pathname === "/";
 
     const showBtn = showButton && (!isDashboard || onClick);
 

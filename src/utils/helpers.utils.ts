@@ -1,4 +1,4 @@
-import { Nullable } from 'types';
+import { Nullable } from "types";
 
 type NullableObject = Nullable<Record<string, unknown>>;
 

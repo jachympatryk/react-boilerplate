@@ -1,6 +1,6 @@
-import queryString from 'query-string';
+import queryString from "query-string";
 
-import { Nullable } from 'types';
+import { Nullable } from "types";
 
 type QueryParam = string | number | boolean | null | undefined;
 export type QueryParams = Record<string, QueryParam | QueryParam[]>;
