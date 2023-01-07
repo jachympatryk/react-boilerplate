@@ -1,0 +1,26 @@
+.container {
+  background-color: #3a3b3c;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text {
+  color: #fff !important;
+  text-transform: uppercase !important;
+  font-family: "Montserrat", 'Roboto Thin', sans-serif !important;
+  font-weight: bold !important;
+  font-size: 36px !important;
+}
+
+.button {
+  font-family: "Montserrat", 'Roboto Thin', sans-serif !important;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+  width: 250px !important;
+  height: 60px !important;
+  margin-top: 34px !important;
+  font-size: 20px !important;
+}

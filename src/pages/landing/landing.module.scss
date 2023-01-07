@@ -1,0 +1,25 @@
+@use "src/assets/styles/breakpoints";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  @media screen and (min-width: breakpoints.$media_l) {
+    padding: 24px;
+    gap: 124px;
+  }
+}
+
+.itemTitle {
+  color: #fff !important;
+  font-size: 32px !important;
+  font-family: "Montserrat", 'Roboto Thin', sans-serif !important;
+}
+
+.itemSubTitle {
+  color: #767676 !important;
+  font-size: 18px !important;
+  text-align: center !important;
+  font-family: "Montserrat", 'Roboto Thin', sans-serif !important;
+}
